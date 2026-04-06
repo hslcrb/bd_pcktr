@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>Variable Manager</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="styleNormal.css">
+	</head>
+	<body>
+
+<p class="MainHeading1">Variable Manager</p>
+<hr>
+<p class="myPic">
+<img src="images/activityWizard_variableManager_1.jpg">
+</p>
+<p> In the <strong>Variable Manager </strong>panel , you will be able to add dynamism to activities. Numbers, strings, and IP addresses may be  assigned to a variable that is generated one time or randomly each time the  student runs an activity. To enable the <strong>Variable Manager</strong>, select either <strong>Intermediate</strong> or <strong>Advanced</strong> for the <strong>Activity Creation Experience</strong> setting in the Welcome panel and then click on the <strong>Show Variable Manager Interface </strong>checkbox in the Variable Manager panel.</p>
+<p>&nbsp;</p>
+<p class="MainHeading2">Creating Pools</p>
+<p>In the <strong>Pools</strong> tab, you can create a pool of numbers, strings, and IP addresses. For the <strong>Number</strong> pool, you can create a pool of numbers ranging from Min to Max. For the <strong>Strings</strong> pool, you can create a pool of strings separated by a semicolon ";" as shown in the screenshot above. The <strong>Strings</strong> pool can be a list of IP addresses, strings, or even numbers where the pool is non-continuous. For the <strong>IP Address</strong> pool, you can create a pool of IP addresses with the network address, mask address, and the range of IP addresses. To remove a pool,  select the appropriate pool and hit Delete on the keyboard.</p>
+<p class="myPic">
+<img src="images/activityWizard_variableManager_2.jpg">
+</p>
+<p>&nbsp;</p>
+<p class="MainHeading2">Creating Variables </p>
+<p>In the <strong>Variables</strong> tab, you can create the variables which are drawn from an entire range of values, a random value, or element position from any of the three types of pools as described above. To remove a variable,  select the appropriate variable and hit Delete on the keyboard.</p>
+<p class="myPic">
+<img src="images/activityWizard_variableManager_3.jpg">
+</p>
+<p>&nbsp;</p>
+<p class="MainHeading2">Assigning Variables</p>
+<p>With <strong>Show Variable Manager Interface</strong> enabled, you can set or assign variables in the <strong>Instructions</strong> text, <strong>Assessment Items</strong>, and <strong>Initial Items. </strong>In the <strong>Instructions</strong> panel, place the cursor where you want the variable to be placed at and then click on the <strong>Insert </strong>&quot;&lt;--&quot; button in the <strong>Variable Manager Interface</strong>. In the <strong>Assessment Items</strong> and <strong>Initial Items</strong>, only the items marked with a green dot can be assigned a variable. To remove an assignment of the variable,  select the appropriate variable and hit Delete on the keyboard.</p>
+<p class="myPic">
+<img src="images/activityWizard_variableManager_4.jpg">
+</p>
+<p>&nbsp;</p>
+<p class="MainHeading2">Using Regular Expressions</p>
+<p>An alternative to using the conventional variables in the Variable Manager is to use regular expressions to check dynamic assessment items like default gateway or IP addresses. Instead of assigning a variable in the assessment items tree to an assessment item as described in the previous section, you may insert a regular expression. The syntax to use a regular expression in Activity Wizard is <strong>{{RegEx:expression}}</strong>. For example, the following is a valid regular expression to check if an IP address is in the 192.168.1.0 network:</p>
+<table class="tableTip">
+	<tr>
+		<td class="TDtableTip"><strong>{{RegEx:\b(192?)\.(168?)\.(1?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b}}</strong></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>You would then insert the  regular expression in replacement of a variable in assessment items tree by selecting the assessment item (e.g. IP Address) and clicking once more on the current value of the assessment item (e.g. 0.0.0.0) such that field would becomes editable. Once the field is editable, you can type in the regular expression and pressing Enter after you are done.</p>
+<p class="myPic">
+<img src="images/activityWizard_variableManager_5.jpg">
+</p>
+</body>
+</html>
